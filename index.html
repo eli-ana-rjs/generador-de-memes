@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ###############  Link CSS ############## -->
+
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/containermeme.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <!-- #################### Favicon #################### -->
+
+    <link rel="shortcut icon" href="./img/iconfinder.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- #################### Google Fonts  #################### -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&family=Rubik:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+
+    <!-- #################### Font Awesome #################### -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    
+
+    <title>Generador de Memes</title>
+</head>
+
+<body class="dark-mode">
+
+    <!-- ###############  Sección del Header ############## -->
+
+    <header>
+
+        <h1 class="title-app">memeBuilder3000</h1>
+
+        <nav>
+            <button class="btn-menu" id="btn-img">Imagen
+                <i class="fas fa-camera-retro "></i>
+
+            </button>
+            <button class="btn-menu" id="btn-text">Texto
+                <i class="fas fa-font"></i>
+            </button>
+            <button class="btn-menu" id="btn-dark-mode">Modo Oscuro
+                <i class="fas fa-toggle-on"></i>
+            </button>
+            <button class="btn-menu hide" id="btn-light-mode">
+                Modo Claro
+                <i class="fas fa-toggle-off"></i>
+            </button>
+        </nav>
+
+    </header>
+
+    <!-- ###############  Sección del meme ############## -->
+
+    <section class="main-container">
+        <div class="inner">
+            <div class="top-text" id="top-img-text">
+                <p >TOP TEXT</p>
+            </div>
+            <div class="meme-img" id="meme-img">
+                <div></div>
+            </div>
+
+            <div class="bottom-text" id="bottom-img-text">
+                <p >BOTTOM TEXT</p>
+            </div>
+        </div>
+
+        <button class="btn btn-download">
+            <i class="fas fa-arrow-circle-down"></i>
+            Descargar meme</button>
+    </section>
+
+      <!-- Sección: Panel de la imagen  -->
+<section id="panel-ppal">
+    <button id="btn-close">
+        <i class="far fa-times-circle btn-close"></i>
+    </button>
+
+    <section class="img-panel hide" id="format-img">
+    
+        <section class="background-panel">
+            <h2 class="panel-title">Imagen</h2>
+
+            <section>
+                <label>URL</label>
+                <input type="text" id="input-url" >
+            </section>
+
+            <section>
+                <label>Fondo</label>
+                <div class="div-container">
+                    <div class="div-fondo">
+                        <input type="color" name="Color del texto" id="background-img-meme" value="#ffffff" class="color-fondo" />
+                        <span>#FFFFFF</span>
+                    </div>
+                    <div>
+                        <select name="background-style" id="background-style" class="background-style">
+                            <option value="unset">Ninguno</option>
+                            <option value=" lighten"">Aclarar</option>
+                            <option value=" darken">Oscurecer</option>
+                            <option value=" Ddifference">Diferencia</option>
+                            <option value="Luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <label>Filtros</label>
+
+                <div>
+                    <label for="">Brillo</label>
+                    <input type="range" class="slide" name="brightnees" id="brightnees" min="0" max="1" value="1"
+                        step="0.1">
+
+                </div>
+                <div>
+                    <label for="">Opacidad</label>
+                    <input type="range" class="slide" name="opacity" id="opacity" min="0" max="1" value="1" step="0.1">
+
+                </div>
+                <div>
+                    <label for="">Contraste</label>
+                    <input type="range" class="slide" name="contrast" id="contrast" min="100" max="1000" value="100"
+                        step="1">
+
+                </div>
+                <div>
+                    <label for="">Desenfoque</label>
+                    <input type="range" class="slide" name="blur" id="blur" min="0" max="10" value="0" step="0.1">
+
+                </div>
+                <div>
+                    <label for="">Escala de Grises</label>
+                    <input type="range" class="slide" name="grayscale" id="grayscale" min="0" max="100" value="0"
+                        step="1">
+
+                </div>
+                <div>
+                    <label for="">Sepia</label>
+                    <input type="range" class="slide" name="sepia" id="sepia" min="0" max="100" value="0" step="1">
+
+                </div>
+                <div>
+                    <label for="">HUE</label>
+                    <input type="range" class="slide" name="hue" id="hue" min="0" max="359" value="0" step="1">
+
+                </div>
+                <div>
+                    <label for="">Saturado</label>
+                    <input type="range" class="slide" name="saturated" id="saturated" min="100" max="1000" value="100"
+                        step="10">
+
+                </div>
+                <div>
+                    <label for="">Negativo</label>
+                    <input type="range" class="slide" name="negative" id="negative" min="0" max="1" value="1"
+                        step="0.1">
+
+                </div>
+            </section>
+
+            <button class="btn" id="reset-filters">Restablecer filtros</button>
+        </section>
+
+    </section>
+
+
+    <!-- Sección: Panel de TEXTO -->
+
+    <section class="text-container background-panel hide" id="format-text">
+        
+        <h2 class="panel-title">Texto</h2>
+        <div class="panel-div">
+            <label for="top-text" class="subtitle">Superior</label>
+            <textarea typy="text" name="top-text" id="top-text" cols="10" rows="1"
+                class="write-text-top">TOP TEXT</textarea>
+            <div>
+
+                <label for="no-text" class="no-text">
+                    <input type="checkbox" id="no-upper-text">
+                    <span>Sin texto superior</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="panel-div">
+
+            <label for="bottom-text" class="subtitle">Inferior</label>
+            <textarea name="bottom-text" id="bottom-text" cols="10" rows="1">BOTTOM TEXT</textarea>
+            <div>
+                <label for="no-text" class="no-text">
+                    <input type="checkbox" id="no-bottom-text">
+                    <span> Sin texto inferior</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Fuentes del texto  -->
+        <div class="panel-div">
+            <label>Fuente</label>
+            <div">
+                <select name="font-family" id="font-family" class="font-family">
+                    <option value="American Typewriter"">American Typewriter</option>
+           <option value=" Arial"">Arial</option>
+                    <option value="Arial Black"">Arial Black</option>
+           <option value=" Andale Mono">Andale Mono</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Helvetica">Helvetica</option>
+                </select>
+        </div>
+
+        <div class="text-properties ">
+
+            <!-- Tamaño del texto -->
+
+            <input type="number" name="font-size" id="font-size" min="10" max="80" value="18" class="font-size" aria-label="Tamaño de la fuente">
+
+            <!-- Alineación del texto -->
+
+            <button id="align-text-left">
+                <i class="fas fa-align-left align "></i>
+            </button>
+            <button id="align-text-center">
+                <i class="fas fa-align-center align "></i>
+            </button>
+            <button id="align-text-right">
+                <i class="fas fa-align-right align "></i>
+            </button>
+
+        </div>
+
+        </div>
+
+        <!-- Color del texto y del fondo del cuadro de texto -->
+        <div class="panel-color">
+            <div>
+                <label for="font-color-text">Color</label>
+                <div>
+                    <input type="color" name="Color del texto" id="text-color" value="#000000">
+                    <span id="font-color-text">#000000</span>
+                </div>
+            </div>
+            <div>
+                <label>Fondo</label>
+                <div>
+                    <input type="color" name="Color del fondo" id="background-color" value="#000000">
+                    <span id="background-color-text">#FFFFFF</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+
+            <label for="no-background-color">
+                <input type="checkbox" id="no-background-color">
+                <span> Fondo transparente</span>
+            </label>
+        </div>
+
+        <!-- Contorno de la letra -->
+        <div ">
+            <label>Contorno</label>
+            <div class=" panel-div">
+            <button class="btn" id="no-outline">Ninguno</button>
+            <button class="btn" id="clear-outline">Claro</button>
+            <button class="btn" id="dark-outline">Oscuro</button>
+        </div>
+        </div>
+
+        <div class="panel-div">
+            <label>Espaciado</label>
+
+            <input type="number" id="spacing" min="10" max="50" value="20" />
+        </div>
+
+        <!-- Interlineado del texto -->
+
+        <div class="panel-div">
+            <label>Interlineado</label>
+            <select name="line-spaicing" id="line-spaicing">
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+                <option value="1.2" selected="">1.2</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+            </select>
+        </div>
+
+        <button class="btn">Reestablecer filtros</button>
+    </section>
+</section>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.pack.js" integrity="sha512-iSQdF1tN8o4e4Ckj8mGjzz83Q6unXzxtnQ15Rqi+mdJx3veCaGa9UzjZJnOZUqnVmbrfhdkYyonnM3Mg9/ar/w==" crossorigin="anonymous"></script>
+</body>
+
+</html>

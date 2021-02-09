@@ -1,0 +1,92 @@
+/* Vista mobile */
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section {
+    padding: 10px;  
+}
+
+input[type="text"],
+textarea {
+    border: none;
+    background-color: var(--backInputTextarea) ;
+    color: wheat;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+    background-color: var(--backInputHover);
+}
+
+label {
+    padding: 5px 0;
+    display: block;
+}
+
+.btn , select {
+    border-radius: 5px;
+    color: var(--colorText);
+    background-color:var(--backBtn) ;
+    padding: 5px ;
+    font-family: 'code';
+    font-weight: 700;
+}
+
+.btn:hover , select:hover {
+    background-color:var(--backBtnHover) ;
+}
+
+.panel-title {
+    padding: 0;
+    text-align: center;
+}
+
+
+.panel-ppal {
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-close{
+    width: 50%;
+       border: none;
+    outline: none;
+    background-color: black;
+    color: wheat;
+    border-radius: 50%;
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+/* Media querys  */
+
+@media (min-width:830) {
+    .panel-title {
+        font-size: 6em;
+    }
+
+    label {
+        font-size: 4em;
+    }
+}

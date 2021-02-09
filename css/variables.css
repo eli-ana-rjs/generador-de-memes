@@ -1,0 +1,50 @@
+/* Variables del Modo Claro */
+:root {
+    /* Header */
+    --backgroundHeader:#BC7B7D; 
+    --btnMenu:#CFB1B3;
+    --btnColorText: #112e38;
+    --btnBackHover: #E3BAB3 ;
+    --btnBoxShadow:#1F2530; 
+    /* Main */
+    --backInputTextarea:#CDA09B;
+    --backInputHover: #DCAFAC;
+    --colorText: black;
+    --backBtn:#7E5252;
+    --backBtnHover:#C49D9D;
+    /* Container meme */
+    --fondo: #DAB457;
+    --backTextWriting:#6F7A53;
+    --backMemeImg:#C9C7AF ;
+    /* Pestaña imagen */
+    --backPanel:#A97E78 ;
+    --slide:#CAAA93; 
+    --slideBtn:#DACDA8;
+}
+
+ .dark-mode {
+    /* Header */
+    --backgroundHeader:#222D44; 
+    --btnMenu:#C48F7F;
+    --btnColorText: #EAE9E5;
+    --btnBackHover: #E3BAB3 ;
+    --btnBoxShadow:#1F2530; 
+    /* Main */
+    --backInputTextarea:#B7BDC1;
+    --backInputHover: #D1DADC;
+    --colorText: #D9CCBA;
+    --backBtn:#5A7581;
+    --backBtnHover:#698B98;
+    /* Container meme */
+    --fondo: #2B2129; 
+    --backTextWriting:#F4DDD5;
+    --backMemeImg: #3D3D3D ;
+    /* Pestaña imagen */
+    --backPanel:#2C2C2C ;
+    --slide:#989999; 
+    --slideBtn:#D6D7D9;
+} 
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; */
+/* font-family: 'Yusei Magic', sans-serif; */

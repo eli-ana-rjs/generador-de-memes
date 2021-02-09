@@ -1,0 +1,63 @@
+/* Contenedor del meme */
+
+.main-container {
+    /* background-color: #E9C9BC; */
+    background-color:var(--fondo);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+.inner {
+    margin: 20px 30px;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    /* cambiar */
+}
+
+.top-text,
+.bottom-text {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    /* background-color: #1F2530; */
+    background-color:var(--backTextWriting) ;
+}
+
+.meme-img {
+    width: 100%;
+    height: auto;
+    padding: 20%;
+    /* background-color: #FBE4CA; */
+    background-color: var(--backMemeImg);
+}
+
+.btn-download {
+    padding: 10px;
+    margin: 30px;
+}
+
+/* Media querys */
+@media (min-width:830px) {
+    .inner {
+        font-size: 5em;
+        margin: 8% 12% 15%;
+        border: none;
+    }
+
+    .top-text, .bottom-text {
+        padding: 5%;
+
+    }
+
+    .btn-download {
+        padding: 30px;
+        margin: 33px;
+        font-size: 4em;
+        margin-bottom: 10%;
+    }
+}
