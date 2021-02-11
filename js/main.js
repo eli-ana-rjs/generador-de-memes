@@ -36,19 +36,53 @@ const spacing = document.getElementById('spacing');
 
 const lineSpaicing = document.getElementById('line-spaicing');
 
+// Imagen
+
+// Declaracion de variables
+const inputUrl = document.getElementById('input-url');
+const memeImg = document.getElementById('meme-img');
+
+const backgroundImgMeme = document.getElementById('background-img-meme');
+
+const backgroundStyle = document.getElementById('background-style');
+
+// Filtros 
+const brightnees = document.getElementById('brightnees');
+const opacity = document.getElementById('opacity');
+const contrast = document.getElementById('contrast');
+const blur = document.getElementById('blur');
+const graysacle = document.getElementById('grayscale');
+const sepia = document.getElementById('sepia');
+const hue = document.getElementById('hue');
+const saturate = document.getElementById('saturated');
+const negative = document.getElementById('negative');
+
+const imgButton = document.getElementById('btn-img');
+const textButton = document.getElementById('btn-text');
+
+const btnCloseText = document.getElementById('btn-close-text');
+const optionText = document.getElementById('option-text');
+const btnCloseImg = document.getElementById('btn-close-img');
+const optionImg = document.getElementById('option-img');
+
+const btnLightMode = document.getElementById('btn-light-mode');
+const btnDarkMode = document.getElementById('btn-dark-mode');
+
+const memeDownload = document.getElementById('meme-download');
+const btnDownload = document.getElementById('btn-download');
 
 // Funciones
 
 // Escribir texto en la parte superior imagen del meme
 
-topText.addEventListener('keyup',() => {
+topText.addEventListener('keyup', () => {
     const topValue = topText.value;
     topImgText.innerText = topValue;
 });
 
 // Escribir texto en la parte inferior imagen del meme
 
-bottomText.addEventListener('keyup',() => {
+bottomText.addEventListener('keyup', () => {
     const bottomValue = bottomText.value;
     bottomImgText.innerText = bottomValue;
 });
@@ -56,12 +90,12 @@ bottomText.addEventListener('keyup',() => {
 // Sin texto superior
 
 noUpperText.addEventListener('change', () => {
-    if(noUpperText.checked){
-       
-       topImgText.classList.add('disappear');
-       
-       ;
-    }else{
+    if (noUpperText.checked) {
+
+        topImgText.classList.add('disappear');
+
+        ;
+    } else {
         topImgText.classList.remove('disappear');
     }
 });
@@ -69,10 +103,10 @@ noUpperText.addEventListener('change', () => {
 // Sin texto superior
 
 noBottomText.addEventListener('change', () => {
-    if(noBottomText.checked){
-       
-      bottomImgText.classList.add('disappear');
-    }else{
+    if (noBottomText.checked) {
+
+        bottomImgText.classList.add('disappear');
+    } else {
         bottomImgText.classList.remove('disappear');
     }
 });
@@ -126,7 +160,7 @@ alignTextRight.addEventListener('click', () => {
 
 // Elegir el color de la letra
 
-fontColor.addEventListener('input' , () => {
+fontColor.addEventListener('input', () => {
     const textColorValue = fontColor.value;
     console.log(fontColor.value)
     topImgText.style.color = textColorValue;
@@ -146,13 +180,13 @@ backgroundColor.addEventListener('input', () => {
 // Fondo transparente
 
 noBackgroundColor.addEventListener('change', () => {
-    if(noBackgroundColor.checked){
+    if (noBackgroundColor.checked) {
         topImgText.style.backgroundColor = 'transparent';
         topImgText.style.top = '0';
         topImgText.style.position = 'absolute';
         bottomImgText.style.backgroundColor = 'transparent';
-       bottomImgText.style.top = '0';
-       bottomImgText.style.position = 'absolute';
+        bottomImgText.style.top = '0';
+        bottomImgText.style.position = 'absolute';
     } else {
         topImgText.style.backgroundColor = `${backgroundColor.value}`;
         topImgText.style.position = '';
@@ -164,8 +198,8 @@ noBackgroundColor.addEventListener('change', () => {
 // Contorno de la letra
 
 noOutline.addEventListener('click', () => {
-    topImgText.style.webkitTextStroke  = 'transparent';
-    bottomImgText.style.webkitTextStroke  = 'transparent';
+    topImgText.style.webkitTextStroke = 'transparent';
+    bottomImgText.style.webkitTextStroke = 'transparent';
 });
 
 
@@ -196,30 +230,22 @@ lineSpaicing.addEventListener('change', () => {
     bottomImgText.style.lineHeight = `${lineSpaicingValue}`;
 });
 
-// Imagen
 
-// Declaracion de variables
- const inputUrl = document.getElementById('input-url');
- const memeImg = document.getElementById('meme-img');
 
- const backgroundImgMeme = document.getElementById('background-img-meme');
-
- const backgroundStyle = document.getElementById('background-style');
- 
 // URL de la imagen
 
 inputUrl.addEventListener('keyup', (event) => {
     event.preventDefault();
     const inputUrlValue = inputUrl.value;
-    memeImg.style.backgroundImage =`url("${ inputUrlValue }"`;
-    memeImg.style.backgroundRepeat = 'no-repeat';          
-    memeImg.style.backgroundPosition = 'center';    
-}); 
+    memeImg.style.backgroundImage = `url("${inputUrlValue}"`;
+    memeImg.style.backgroundRepeat = 'no-repeat';
+    memeImg.style.backgroundPosition = 'center';
+});
 
 // Fondo de la imagen del meme
 
-backgroundImgMeme.addEventListener('input',() => {
-    const backImgMeme = backgroundImgMeme.value; 
+backgroundImgMeme.addEventListener('input', () => {
+    const backImgMeme = backgroundImgMeme.value;
     memeImg.style.backgroundColor = backImgMeme;
     backImgMeme.innerHTML = backImgMeme;
 });
@@ -228,89 +254,53 @@ backgroundImgMeme.addEventListener('input',() => {
 
 backgroundStyle.addEventListener('change', () => {
     const styleValue = backgroundStyle.value;
-    memeImg.style.backgroundBlendMode = styleValue; 
+    memeImg.style.backgroundBlendMode = styleValue;
 });
 
-// Filtros
+// /////////////////////////////   Filtros
 
 // Brillo
 
-const brightnees = document.getElementById('brightnees');
-const opacity = document.getElementById('opacity');
-const contrast = document.getElementById('contrast');
-const blur = document.getElementById('blur');
-const graysacle = document.getElementById('grayscale');
-const sepia = document.getElementById('sepia');
-const hue = document.getElementById('hue');
-const saturated = document.getElementById('saturated');
-const negative = document.getElementById('negative');
-
-// Me sale error
-
-const finalFilter = () =>{
-    memeImg.style.filter = `brightnees(${brightneesValue.value}) opacity(${opacityValue.value}) contrast(${contrastValue.value}%) blur(${blurValue.value}px) grayscale(${grayscaleValue.value}%) sepia(${sepiaValue.value}%) hue-rotate(${hueValue.value}deg) saturate(${saturateValue.value}%) negative(${negativeValue.value})`;
+const finalFilter = () => {
+    const brightneesValue = brightnees.value;
+    const opacityValue = opacity.value;
+    const contrastValue = contrast.value;
+    const blurValue = blur.value;
+    const grayscaleValue = grayscale.value;
+    const sepiaValue = sepia.value;
+    const hueValue = hue.value;
+    const saturatedValue = saturate.value;
+    const negativeValue = negative.value;
+    // console.log(opacityValue);
+    memeImg.style.filter = `brightness(${brightneesValue}) opacity(${opacityValue}) contrast(${contrastValue}%)  blur(${blurValue}px) grayscale(${grayscaleValue}%) sepia(${sepiaValue}%) hue-rotate(${hueValue}deg) saturate(${saturatedValue}%) invert(${negativeValue})`;
+    //    console.log(`brightnees(${brightneesValue})`);
+    //  console.log(memeImg)
 };
 
-brightnees.addEventListener('change', () => {
-    const brightneesValue = brightnees.value;
-    memeImg.style.filter = `brightnees(${brightneesValue})`;
-    finalFilter();
-});
 
-opacity.addEventListener('change', () => {
-    const opacityValue = opacity.value;
-    memeImg.style.filter = `opacity(${opacityValue})`;
-    finalFilter();
-});
+brightnees.addEventListener('change', finalFilter);
 
-contrast.addEventListener('change', () => {
-    const contrastValue = contrast.value;
-    memeImg.style.filter = `contrast(${contrastValue})`;
-    finalFilter();
-});
+opacity.addEventListener('change', finalFilter);
 
+contrast.addEventListener('change', finalFilter);
 
-blur.addEventListener('change', () => {
-    const blurValue = blur.value;
-    memeImg.style.filter = `blur(${blurValue}%)`;
-    finalFilter();
-});
+blur.addEventListener('change', finalFilter);
 
-grayscale.addEventListener('change', () => {
-    const grayscaleValue = grayscale.value;
-    memeImg.style.filter = `grayscale(${grayscaleValue}%)`;
-    finalFilter();
-});
+grayscale.addEventListener('change', finalFilter);
 
-sepia.addEventListener('change', () => {
-    const sepiaValue = sepia.value;
-    memeImg.style.filter = `sepia(${sepiaValue}%)`;
-    finalFilter();
-});
+sepia.addEventListener('change', finalFilter);
 
-hue.addEventListener('change', () => {
-    const hueValue = hue.value;
-    memeImg.style.filter = `hue-rotate(${hueValue}deg)`;
-    finalFilter();
-});
+hue.addEventListener('change', finalFilter);
 
-saturated.addEventListener('change', () => {
-    const saturatedValue = saturated.value;
-    memeImg.style.filter = `saturated(${saturatedValue}%)`;
-    finalFilter();
-});
+saturated.addEventListener('change', finalFilter);
 
-negative.addEventListener('change', () => {
-    const negativeValue = negative.value;
-    memeImg.style.filter = `negative(${negativeValue})`;
-    finalFilter();
-});
+negative.addEventListener('change', finalFilter);
 
 // Restablecer filtros
 
 const resetFilters = document.getElementById('reset-filters');
 
-resetFilters.addEventListener('click', ()=> {
+resetFilters.addEventListener('click', () => {
     brightneesvalue = '1';
     opacity.value = '1';
     contrast.value = '100';
@@ -323,51 +313,57 @@ resetFilters.addEventListener('click', ()=> {
     finalFilter();
 });
 
+// Cierre de la pestaña de opciones
+
+// console.log(btnCloseText)
+
+btnCloseText.addEventListener('click', () => {
+    // console.log('cierra')
+    optionText.classList.add('hide');
+});
+
+btnCloseImg.addEventListener('click', () => {
+    // console.log('cierra')
+    optionImg.classList.add('hide');
+});
 
 
 // Vincular cada boton del header con la pestaña correspondiente
-const imgButton = document.getElementById('btn-img');
-const textButton = document.getElementById('btn-text');
-const panelPrincipal = document.getElementById('panel-ppal');
-const formatImg = document.getElementById('format-img');
-const formatText = document.getElementById('format-text');
 
-// imgButton.addEventListener('click', ()=>{
-//     panelPrincipal.style.display = 'none';
-//     formatImg.classList.remove('hide');
-//     formatText.classList.add('hide');
-// });
-
-
-// textButton.addEventListener('click', ()=>{
-//     panelPrincipal.style.display = 'none';
-//     formatText.classList.remove('hide');
-//     formatImg.classList.add('hide');
-// });
-
-const btnClose = document.getElementById('btn-close');
-
-btnClose.addEventListener('click', () => {
-    panelPrincipal.style.display ='none';
+imgButton.addEventListener('click', () => {
+    optionImg.classList.remove('hide');
 });
 
-
-
+textButton.addEventListener('click', () => {
+    optionText.classList.remove('hide');
+});
 
 //Modo oscuro
 
-const btnLightMode = document.getElementById('btn-light-mode');
-const btnDarkMode = document.getElementById('btn-dark-mode');
+const toggleMode = () => {
+    const mode = document.body.classList.contains('dark-mode');
+    if (!mode) {
+        console.log('toggle to dark mode');
+        btnDarkMode.classList.add('hide');
+        btnLightMode.classList.remove('hide');
+        document.body.classList.add('dark-mode');
+    } else {
+        console.log('toggle to light mode');
+        btnLightMode.classList.add('hide');
+        btnDarkMode.classList.remove('hide');
+        document.body.classList.remove('dark-mode');
+    }
+}
 
-btnDarkMode.addEventListener('click', ()=>{
-    btnDarkMode.classList.add('hide');
-    btnLightMode.classList.remove('hide');
-    document.body.classList.add('dark-mode');
-}); 
+btnDarkMode.addEventListener('click', toggleMode);
 
-btnLightMode.addEventListener('click', ()=>{
-    btnLightMode.classList.remove('hide');
-   btnDarkMode.classList.add('hide');
-   document.body.classList.remove('dark-mode');
+btnLightMode.addEventListener('click', toggleMode);
+
+// Boton de descarga 
+
+btnDownload.addEventListener('click', ()=>{
+    domtoimage.toBlob(memeDownload)
+    .then(function (blob) {
+        saveAs(blob, 'meme.png');
+    });
 });
-

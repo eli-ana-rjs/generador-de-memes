@@ -2,6 +2,7 @@
 
 /* Pestaña de imagen */
 
+
 .img-panel {
 
     width: 100%;
@@ -42,6 +43,7 @@
     width: 100%;
 }
 
+
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
@@ -49,6 +51,25 @@ input[type='range']::-webkit-slider-thumb {
     border-radius: 50%;
     background: var(--slideBtn) ;
     cursor: pointer;
+}
+
+.slide {
+    width: 100%;
+}
+
+.reset-contaianer {
+    padding-bottom: 1.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-border {
+    width: 30%;
 }
 
 /* Pestaña del texto */
@@ -121,6 +142,15 @@ input[type='range']::-webkit-slider-thumb {
 .font-helvetica {
     font-family: 'Helvetica';
 } */
+
+.option-img, .option-text {
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    width: 100vw;
+    overflow: scroll;
+}
+
 
 /* Media querys  */
 
