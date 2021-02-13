@@ -179,19 +179,17 @@ backgroundColor.addEventListener('input', () => {
 
 // Fondo transparente
 
-noBackgroundColor.addEventListener('change', () => {
-    if (noBackgroundColor.checked) {
-        topImgText.style.backgroundColor = 'transparent';
-        topImgText.style.top = '0';
-        topImgText.style.position = 'absolute';
-        bottomImgText.style.backgroundColor = 'transparent';
-        bottomImgText.style.top = '0';
-        bottomImgText.style.position = 'absolute';
+noBackgroundColor.addEventListener('change', (event) => {
+    const elements = [memeDownload,topImgText,bottomImgText];
+    console.log(event);
+    if (event.target.checked){
+        elements.forEach((element) => {
+            element.classList.add('transparent');
+        })
     } else {
-        topImgText.style.backgroundColor = `${backgroundColor.value}`;
-        topImgText.style.position = '';
-        bottomImgText.style.backgroundColor = `${backgroundColor.value}`;
-        bottomImgText.style.position = '';
+        elements.forEach((element) => {
+            element.classList.remove('transparent');
+        })
     }
 });
 
@@ -229,8 +227,6 @@ lineSpaicing.addEventListener('change', () => {
     topImgText.style.lineHeight = `${lineSpaicingValue}`;
     bottomImgText.style.lineHeight = `${lineSpaicingValue}`;
 });
-
-
 
 // URL de la imagen
 
