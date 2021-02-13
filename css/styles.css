@@ -7,7 +7,7 @@
 
     width: 100%;
     color: var(--colorText);
-    background-color: var(--backPanel) ;
+    background-color: var(--backPanel);
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,7 +16,6 @@
 
 .div-container {
     display: flex;
-    justify-content: space-around;
 }
 
 .color-fondo {
@@ -24,7 +23,7 @@
     margin-left: -22px;
     width: 30px;
     height: 30px;
-   
+
 }
 
 .div-fondo {
@@ -34,7 +33,7 @@
 }
 
 .filter {
-    background-color:var(--slide) ;
+    background-color: var(--slide);
     border-radius: 5px;
     appearance: none;
     padding: 5px;
@@ -49,7 +48,7 @@ input[type='range']::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--slideBtn) ;
+    background: var(--slideBtn);
     cursor: pointer;
 }
 
@@ -82,11 +81,14 @@ input[type='range']::-webkit-slider-thumb {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+.cell {
+    width: 50%;
 }
 
 .background-panel {
-    background-color:var(--backPanel) ;
+    background-color: var(--backPanel);
     color: var(--colorText);
 }
 
@@ -96,7 +98,7 @@ input[type='range']::-webkit-slider-thumb {
 
 .text-properties {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .font-size {
@@ -106,9 +108,9 @@ input[type='range']::-webkit-slider-thumb {
 .font-family {
     margin-bottom: 10px;
     width: 100%;
- }
+}
 
- .align {
+.align {
     height: 20px;
     margin: 5px;
     padding: 5px;
@@ -143,17 +145,33 @@ input[type='range']::-webkit-slider-thumb {
     font-family: 'Helvetica';
 } */
 
-.option-img, .option-text {
+.option-img,
+.option-text {
     height: 100vh;
     padding: 0;
     position: fixed;
     width: 100vw;
-    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.option-img::-webkit-scrollbar, .option-text::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 
 /* Media querys  */
 
-@media (min-width:830px) {
-   
+@media (min-width:480px) {
+    .div-container {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .option-img,
+    .option-text {
+        width: 30%;
+        right: 0;
+        
+ 
 }

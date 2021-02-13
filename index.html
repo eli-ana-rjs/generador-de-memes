@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- #################### Etiquetas para redes sociales #################### -->
+    <meta name="author" content="Eliana Anabella Rojas" />
+    <meta name="description"
+        content="En la siguiente páginas podrás descargar un meme armado por vos y compartirlo con quien desees " />
+    <meta name="keywords" content="Meme, Developer, Frontend, Programación" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="memeBuilder3000" />
+    <meta property="og:description"
+        content="En la siguiente páginas podrás descargar un meme armado por vos y compartirlo con quien desees  " />
+    <meta property="og:type" content="article" />
+    <meta property="og:site name" content="memeBuilder3000" />
+    <meta property="og:url" content="https://eli-ana-rjs.github.io/generador-de-memes/">
+
     <!-- ###############  Link CSS ############## -->
 
     <link rel="stylesheet" href="./css/variables.css">
@@ -31,8 +45,6 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
-
 
     <title>Generador de Memes</title>
 </head>
@@ -66,7 +78,7 @@
 
     <!-- ###############  Sección del meme ############## -->
 
-    <section class="main-container">
+    <section class="main-container ">
         <div class="inner" id="meme-download">
             <div class="top-text" id="top-img-text">
                 <p>TOP TEXT</p>
@@ -87,7 +99,7 @@
 
     <!-- Sección: Panel de la imagen  -->
 
-    <section class="option-img hide" id="option-img">
+    <section class="option-img hide lateral" id="option-img">
 
         <button id="btn-close-img" class="close">
             <i class="far fa-times-circle btn-close"></i>
@@ -99,7 +111,7 @@
 
                 <section>
                     <label>URL</label>
-                    <input type="text" id="input-url">
+                    <input type="text" id="input-url" placeholder="Pega la dirección de la imagen">
                 </section>
 
                 <section>
@@ -187,7 +199,7 @@
     </section>
 
     <!-- Sección: Panel de TEXTO -->
-    <section class="option-text hide" id="option-text">
+    <section class="option-text lateral hide" id="option-text">
         <button id="btn-close-text" class="close">
             <i class="far fa-times-circle btn-close"></i>
         </button>
@@ -258,17 +270,16 @@
 
             <!-- Color del texto y del fondo del cuadro de texto -->
             <div class="panel-color panel-div">
-                <div>
+                <div class="cell">
                     <label for="font-color-text">Color</label>
-                    <div>
+                    <div class="input-color-wrapper">
                         <input type="color" class="input-color" name="Color del texto" id="text-color" value="#000000">
                         <span id="font-color-text">#000000</span>
                     </div>
                 </div>
-                <div>
-                    <label>Fondo</label>
-                    <div>
-                        <input type="color" name="Color del fondo" id="background-color" value="#000000">
+                <div class="cell">                    <label>Fondo</label>
+                    <div class="input-color-wrapper">
+                        <input type="color" class="input-color" name="Color del fondo" id="background-color" value="#000000">
                         <span id="background-color-text">#FFFFFF</span>
                     </div>
                 </div>

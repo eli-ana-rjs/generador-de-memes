@@ -211,7 +211,7 @@ clearOutline.addEventListener('click', () => {
 
 darkOutline.addEventListener('click', () => {
     topImgText.style.webkitTextStroke = ' 0.5px white';
-    bottomImgText.style.owebkitTextStroke = ' 0.5px black';
+    bottomImgText.style.webkitTextStroke = ' 0.5px black';
 });
 
 // Espaciado
@@ -331,11 +331,14 @@ btnCloseImg.addEventListener('click', () => {
 // Vincular cada boton del header con la pestaña correspondiente
 
 imgButton.addEventListener('click', () => {
+
     optionImg.classList.remove('hide');
+    optionText.classList.add('hide');
 });
 
 textButton.addEventListener('click', () => {
     optionText.classList.remove('hide');
+    optionImg.classList.add('hide');
 });
 
 //Modo oscuro
@@ -361,9 +364,20 @@ btnLightMode.addEventListener('click', toggleMode);
 
 // Boton de descarga 
 
-btnDownload.addEventListener('click', ()=>{
+btnDownload.addEventListener('click', () => {
     domtoimage.toBlob(memeDownload)
-    .then(function (blob) {
-        saveAs(blob, 'meme.png');
-    });
+        .then(function (blob) {
+            saveAs(blob, 'meme.png');
+        });
+});
+
+// Fijar pestaña de texto o imagen al body 
+
+window.addEventListener('load', () => {
+    console.log('funciona');
+    console.log(window.innerWidth);
+    if (window.innerWidth > 480) {
+        optionImg.classList.remove('hide');
+        optionText.classList.add('hide');
+    }
 });

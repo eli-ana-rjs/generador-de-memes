@@ -3,16 +3,16 @@
 .main-container {
     /* background-color: #E9C9BC; */
     background-color:var(--fondo);
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;  
 }
 
 .inner {
-    margin: 20px 30px;
+    width: 100%;
+    max-width: 500px;
+    padding: 23px;
     height: auto;
-    border: 1px solid black;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
@@ -42,22 +42,25 @@
 }
 
 /* Media querys */
-@media (min-width:830px) {
+@media (min-width:480px) {
+
+    .main-container {
+        width: 70%;
+    }
+
     .inner {
-        font-size: 5em;
-        margin: 8% 12% 15%;
-        border: none;
+        margin: 40px auto;
+        font-size: 1.5em;
     }
 
     .top-text, .bottom-text {
         padding: 5%;
-
     }
 
     .btn-download {
-        padding: 30px;
-        margin: 33px;
-        font-size: 4em;
-        margin-bottom: 10%;
+        margin: 161px;
+        font-size: 1.2em;
+        margin-top: 0;
+        margin-bottom: 40px;
     }
 }
