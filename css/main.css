@@ -26,9 +26,11 @@ input[type="color"] {
 	height: 32px;
     border-radius: 50%;
 }
+
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 0;
 }
+
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
@@ -46,11 +48,14 @@ input[type="color"]::-webkit-color-swatch {
     display: flex;
     align-items: center;
 }
+
 input[type="text"],
 textarea {
     border: none;
     background-color: var(--backInputTextarea);
-    color: wheat;
+    color: var(--textInput);
+    font-family: 'code';
+    font-weight: bold;
     padding: 10px;
     width: 100%;
     border-radius: 5px;
@@ -66,7 +71,7 @@ textarea:hover {
 select {
     border-radius: 5px;
     color: var(--colorText);
-    background-color: var(--backBtn);
+    background-color: var(--backInputTextarea);
     padding: 5px;
     font-family: 'code';
     font-weight: 700;
@@ -92,8 +97,10 @@ select:hover {
     outline: none;
     border-radius: 50%;
     padding: 10px; 
+    color: var(--btnClose);
     font-size: 24px;
     position: absolute; 
+ 
 }
 
 #btn-dark-mode,
@@ -105,6 +112,10 @@ select:hover {
    display: contents;
 }
 
+.title-section {
+    display: block;
+    padding-bottom: 10px;
+}
 
 /* Media querys  */
 

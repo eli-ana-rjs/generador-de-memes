@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 24px;
 }
 
 .filter {
@@ -42,11 +43,20 @@
     width: 100%;
 }
 
+input[type='range']{
+    width: 95%;
+    height: 0.65rem;
+    background-color: var(--btnBackHover);
+    appearance: none;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 6px 0;
+}
 
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     background: var(--slideBtn);
     cursor: pointer;
@@ -97,12 +107,12 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .text-properties {
-    display: flex;
-    justify-content: space-between;
+   text-align: center;
 }
 
 .font-size {
-    padding: 5px;
+    padding: 7px;
+    margin-left: 10px;
 }
 
 .font-family {
@@ -115,6 +125,19 @@ input[type='range']::-webkit-slider-thumb {
     margin: 5px;
     padding: 5px;
     width: 20px;
+}
+
+.style-properties-text {
+    background-color: var(--backInputTextarea);
+    border: none;
+    border-radius: 5px;
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;   
+}
+
+.spacing {
+    padding: 7px;
 }
 
 .disappear {
@@ -154,9 +177,12 @@ input[type='range']::-webkit-slider-thumb {
     overflow-x: hidden;
 }
 
-.option-img::-webkit-scrollbar, .option-text::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+.option-img::-webkit-scrollbar,
+.option-text::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
 
 
@@ -172,6 +198,14 @@ input[type='range']::-webkit-slider-thumb {
     .option-text {
         width: 30%;
         right: 0;
-        
- 
+    }
+
+    .font-size{
+        margin-left: 0;
+    }
+
+    .style-properties-text {
+        margin-right: 11px;
+        cursor: pointer;
+    }
 }

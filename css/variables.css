@@ -7,34 +7,37 @@
     --btnBackHover: #E3BAB3 ;
     --btnBoxShadow:#1F2530; 
     /* Main */
-    --backInputTextarea:#CDA09B;
+    --backInputTextarea:#F0F0F0;
     --backInputHover: #DCAFAC;
     --colorText: black;
-    --backBtn:#7E5252;
+    --backBtn:#A57373;
     --backBtnHover:#C49D9D;
     /* Container meme */
     --fondo: #DAB457;
     --backTextWriting:#6F7A53;
     --backMemeImg:#C9C7AF ;
     /* Pestaña imagen */
-    --backPanel:#A97E78 ;
+    --backPanel:#B97484;
     --slide:#CAAA93; 
-    --slideBtn:#DACDA8;
+    --slideBtn:#719140;
+    /* Pestaña texto */
+    --textInput: #112e38;
+    --btnClose:black;
 }
 
  .dark-mode {
     /* Header */
     --backgroundHeader:#222D44; 
-    --btnMenu:#C48F7F;
-    --btnColorText: #EAE9E5;
-    --btnBackHover: #E3BAB3 ;
+    --btnMenu:#E5AF9E;
+    --btnColorText: #393938;
+    --btnBackHover:#cad0d4 ;
     --btnBoxShadow:#1F2530; 
     /* Main */
     --backInputTextarea:#B7BDC1;
     --backInputHover: #D1DADC;
-    --colorText: #D9CCBA;
+    --colorText: #FFFCFA;
     --backBtn:#5A7581;
-    --backBtnHover:#698B98;
+    --backBtnHover:#7DA1B0;
     /* Container meme */
     --fondo: #2B2129; 
     --backTextWriting:#F4DDD5;
@@ -43,6 +46,9 @@
     --backPanel:#2C2C2C ;
     --slide:#989999; 
     --slideBtn:#D6D7D9;
+     /* Pestaña texto */
+     --textInput: #112e38;
+     --btnClose:#D6D7D9;
 } 
 
 /* font-family: 'Roboto', sans-serif;
