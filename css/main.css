@@ -54,7 +54,7 @@ textarea {
     border: none;
     background-color: var(--backInputTextarea);
     color: var(--textInput);
-    font-family: 'code';
+    font-family: 'code', 'Roboto', sans-serif;
     font-weight: bold;
     padding: 10px;
     width: 100%;
@@ -73,7 +73,7 @@ select {
     color: var(--colorText);
     background-color: var(--backInputTextarea);
     padding: 5px;
-    font-family: 'code';
+    font-family: 'code','Roboto', sans-serif;
     font-weight: 700;
 }
 

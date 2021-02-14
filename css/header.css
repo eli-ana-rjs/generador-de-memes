@@ -36,7 +36,7 @@ nav {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    font-family: 'code';
+    font-family: 'code','Roboto', sans-serif;
     color: var(--btnColorText);
     /* background-color: #B0B6B3; */
     background-color: var(--btnMenu);
