@@ -43,6 +43,8 @@
 
 ## Vista previa del proyecto 🖌
 
+<!-- ![vista-escritorio-modo-oscuro]() -->
+
 <br />
 
 ### Así deberia verse el proyecto cuando lo abras en tu navegador

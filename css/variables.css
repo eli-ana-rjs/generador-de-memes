@@ -1,11 +1,12 @@
 /* Variables del Modo Claro */
 :root {
     /* Header */
-    --backgroundHeader:#BC7B7D; 
-    --btnMenu:#CFB1B3;
+    --backgroundHeader:#AA5557; 
+    --btnMenu:#E0CCCD;
     --btnColorText: #112e38;
     --btnBackHover: #E3BAB3 ;
     --btnBoxShadow:#1F2530; 
+    --colorTitle: #FFFFFF;
     /* Main */
     --backInputTextarea:#F0F0F0;
     --backInputHover: #DCAFAC;
@@ -13,9 +14,9 @@
     --backBtn:#A57373;
     --backBtnHover:#C49D9D;
     /* Container meme */
-    --fondo: #DAB457;
-    --backTextWriting:#6F7A53;
-    --backMemeImg:#C9C7AF ;
+    --fondo: #E3C67D;
+    --backTextWriting:#69704C;
+    --backMemeImg:#F1F1EE ;
     /* Pestaña imagen */
     --backPanel:#B97484;
     --slide:#CAAA93; 
@@ -33,11 +34,11 @@
     --btnBackHover:#cad0d4 ;
     --btnBoxShadow:#1F2530; 
     /* Main */
-    --backInputTextarea:#B7BDC1;
+    --backInputTextarea:#7DA1B0;
     --backInputHover: #D1DADC;
     --colorText: #FFFCFA;
     --backBtn:#5A7581;
-    --backBtnHover:#7DA1B0;
+    --backBtnHover: #B7BDC1;
     /* Container meme */
     --fondo: #2B2129; 
     --backTextWriting:#F4DDD5;

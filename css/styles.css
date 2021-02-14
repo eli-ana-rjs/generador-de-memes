@@ -185,6 +185,9 @@ input[type='range']::-webkit-slider-thumb {
     /* Optional: just make scrollbar invisible */
 }
 
+.reset {
+    cursor: pointer;
+}
 
 /* Media querys  */
 
@@ -206,6 +209,5 @@ input[type='range']::-webkit-slider-thumb {
 
     .style-properties-text {
         margin-right: 11px;
-        cursor: pointer;
     }
 }
