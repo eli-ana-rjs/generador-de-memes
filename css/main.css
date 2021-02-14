@@ -11,7 +11,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color:var(--fondo);
+    background-color: var(--fondo);
 
 }
 
@@ -20,19 +20,19 @@ section {
 }
 
 input[type="color"] {
-	-webkit-appearance: none;
-	border: none;
-	width: 32px;
-	height: 32px;
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+    padding: 0;
 }
 
 input[type="color"]::-webkit-color-swatch {
-	border: none;
+    border: none;
 }
 
 .panel-div {
@@ -95,10 +95,10 @@ select:hover {
     border: none;
     outline: none;
     border-radius: 50%;
-    padding: 10px; 
+    padding: 10px;
     color: var(--btnClose);
     font-size: 24px;
-    position: absolute; 
+    position: absolute;
     cursor: pointer;
 }
 
@@ -108,7 +108,7 @@ select:hover {
 }
 
 .close {
-   display: contents;
+    display: contents;
 }
 
 .title-section {
@@ -123,6 +123,7 @@ select:hover {
     header {
         width: 70%;
     }
+
     .panel-title {
         font-size: 2em;
     }
@@ -131,7 +132,8 @@ select:hover {
         font-size: 1.5em;
     }
 
-    #btn-dark-mode, #btn-light-mode {
+    #btn-dark-mode,
+    #btn-light-mode {
         width: auto;
     }
 
@@ -140,7 +142,8 @@ select:hover {
         margin-left: 20px;
     }
 
-    .btn , select {
+    .btn,
+    select {
         padding: 10px;
     }
 

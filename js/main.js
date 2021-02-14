@@ -47,7 +47,7 @@ const backgroundImgMeme = document.getElementById('background-img-meme');
 const backgroundStyle = document.getElementById('background-style');
 
 // Filtros 
-const brightnees = document.getElementById('brightnees');
+const brightnees = document.getElementById('brightness');
 const opacity = document.getElementById('opacity');
 const contrast = document.getElementById('contrast');
 const blur = document.getElementById('blur');
@@ -180,9 +180,9 @@ backgroundColor.addEventListener('input', () => {
 // Fondo transparente
 
 noBackgroundColor.addEventListener('change', (event) => {
-    const elements = [memeDownload,topImgText,bottomImgText];
+    const elements = [memeDownload, topImgText, bottomImgText];
     console.log(event);
-    if (event.target.checked){
+    if (event.target.checked) {
         elements.forEach((element) => {
             element.classList.add('transparent');
         })
@@ -200,15 +200,13 @@ noOutline.addEventListener('click', () => {
     bottomImgText.style.webkitTextStroke = 'transparent';
 });
 
-
 clearOutline.addEventListener('click', () => {
     topImgText.style.webkitTextStroke = ' 0.5px white';
     bottomImgText.style.webkitTextStroke = ' 0.5px white';
 });
 
-
 darkOutline.addEventListener('click', () => {
-    topImgText.style.webkitTextStroke = ' 0.5px white';
+    topImgText.style.webkitTextStroke = ' 0.5px black';
     bottomImgText.style.webkitTextStroke = ' 0.5px black';
 });
 

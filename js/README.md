@@ -43,11 +43,54 @@
 
 ## Vista previa del proyecto 🖌
 
-<!-- ![vista-escritorio-modo-oscuro]() -->
-
 <br />
 
 ### Así deberia verse el proyecto cuando lo abras en tu navegador
+
+<br />
+
+## Vista escritorio - Sección Imagen - Modo Oscuro 
+
+<br />
+
+![vista-escritorio-modo-oscuro-imagen](https://github.com/eli-ana-rjs/generador-de-memes/blob/master/img/desktopDarkModeImg.png?raw=true)
+
+<br />
+
+## Vista escritorio - Sección Texto - Modo Oscuro 
+
+<br />
+
+![vista-escritorio-modo-oscuro-texto](https://github.com/eli-ana-rjs/generador-de-memes/blob/master/img/desktopDarkModeText.png?raw=true)
+
+<br />
+
+## Vista escritorio - Sección Imagen - Modo Claro 
+
+<br />
+
+![vista-escritorio-modo-claro-imagen](https://github.com/eli-ana-rjs/generador-de-memes/blob/master/img/desktopLightModeImg.png?raw=true)
+
+<br />
+
+## Vista escritorio - Sección Texto - Modo Claro
+
+<br />
+
+![vista-escritorio-modo-claro-texto](https://github.com/eli-ana-rjs/generador-de-memes/blob/master/img/desktopLightModeText.png?raw=true)
+
+
+<br />
+
+<!-- Quedan muy grandes las imagenes -->
+<!-- ## Vista Mobile - Container Meme - Modo Oscuro
+
+![vista-mobile-modo-oscuro](https://github.com/eli-ana-rjs/generador-de-memes/blob/master/img/mobileDarkMode.png?raw=true)
+
+
+## Vista Mobile - Container Meme - Modo Claro
+
+![vista-mobile-modo-claro](https://github.com/eli-ana-rjs/generador-de-memes/blob/master/img/mobileLightMode.png?raw=true) -->
 
 <br />
 

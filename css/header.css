@@ -40,7 +40,7 @@ nav {
     color: var(--btnColorText);
     /* background-color: #B0B6B3; */
     background-color: var(--btnMenu);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .btn-menu:hover {
@@ -63,13 +63,13 @@ nav {
 
 /* Media querys  */
 
-@media (min-width:480px){
+@media (min-width:480px) {
 
-    .title-app{
+    .title-app {
         font-size: 2rem;
     }
 
-    .btn-menu{
+    .btn-menu {
         font-size: 1.2rem;
         margin: 10px;
     }

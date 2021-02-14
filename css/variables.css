@@ -1,56 +1,56 @@
 /* Variables del Modo Claro */
 :root {
     /* Header */
-    --backgroundHeader:#AA5557; 
-    --btnMenu:#E0CCCD;
+    --backgroundHeader: #AA5557;
+    --btnMenu: #E0CCCD;
     --btnColorText: #112e38;
-    --btnBackHover: #E3BAB3 ;
-    --btnBoxShadow:#1F2530; 
+    --btnBackHover: #E3BAB3;
+    --btnBoxShadow: #1F2530;
     --colorTitle: #FFFFFF;
     /* Main */
-    --backInputTextarea:#F0F0F0;
+    --backInputTextarea: #F0F0F0;
     --backInputHover: #DCAFAC;
     --colorText: black;
-    --backBtn:#A57373;
-    --backBtnHover:#C49D9D;
+    --backBtn: #A57373;
+    --backBtnHover: #C49D9D;
     /* Container meme */
     --fondo: #E3C67D;
-    --backTextWriting:#69704C;
-    --backMemeImg:#F1F1EE ;
+    --backTextWriting: #69704C;
+    --backMemeImg: #F1F1EE;
     /* Pestaña imagen */
-    --backPanel:#B97484;
-    --slide:#CAAA93; 
-    --slideBtn:#719140;
+    --backPanel: #B97484;
+    --slide: #CAAA93;
+    --slideBtn: #719140;
     /* Pestaña texto */
     --textInput: #112e38;
-    --btnClose:black;
+    --btnClose: black;
 }
 
- .dark-mode {
+.dark-mode {
     /* Header */
-    --backgroundHeader:#222D44; 
-    --btnMenu:#E5AF9E;
+    --backgroundHeader: #222D44;
+    --btnMenu: #E5AF9E;
     --btnColorText: #393938;
-    --btnBackHover:#cad0d4 ;
-    --btnBoxShadow:#1F2530; 
+    --btnBackHover: #cad0d4;
+    --btnBoxShadow: #1F2530;
     /* Main */
-    --backInputTextarea:#7DA1B0;
+    --backInputTextarea: #7DA1B0;
     --backInputHover: #D1DADC;
     --colorText: #FFFCFA;
-    --backBtn:#5A7581;
+    --backBtn: #5A7581;
     --backBtnHover: #B7BDC1;
     /* Container meme */
-    --fondo: #2B2129; 
-    --backTextWriting:#F4DDD5;
-    --backMemeImg: #3D3D3D ;
+    --fondo: #2B2129;
+    --backTextWriting: #F4DDD5;
+    --backMemeImg: #3D3D3D;
     /* Pestaña imagen */
-    --backPanel:#2C2C2C ;
-    --slide:#989999; 
-    --slideBtn:#D6D7D9;
-     /* Pestaña texto */
-     --textInput: #112e38;
-     --btnClose:#D6D7D9;
-} 
+    --backPanel: #2C2C2C;
+    --slide: #989999;
+    --slideBtn: #D6D7D9;
+    /* Pestaña texto */
+    --textInput: #112e38;
+    --btnClose: #D6D7D9;
+}
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif; */

@@ -43,7 +43,7 @@
     width: 100%;
 }
 
-input[type='range']{
+input[type='range'] {
     width: 95%;
     height: 0.65rem;
     background-color: var(--btnBackHover);
@@ -107,7 +107,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .text-properties {
-   text-align: center;
+    text-align: center;
 }
 
 .font-size {
@@ -133,7 +133,7 @@ input[type='range']::-webkit-slider-thumb {
     border-radius: 5px;
     display: inline;
     margin-right: 20px;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .spacing {
@@ -203,7 +203,7 @@ input[type='range']::-webkit-slider-thumb {
         right: 0;
     }
 
-    .font-size{
+    .font-size {
         margin-left: 0;
     }
 
